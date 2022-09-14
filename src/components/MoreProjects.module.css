@@ -1,0 +1,31 @@
+.slider-contanainer{
+  margin-top: 5rem;
+  max-width: 90%;
+  margin: auto;
+}
+.slider-h1 {
+  font-size: 3.3rem;
+  color: #158bd9;
+  /* margin: 8rem 0rem; */
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.slider-card {
+  /* margin-left: 1rem; */
+  text-align: center;
+}
+
+.slider-card img{
+  width: 92%;
+  margin: auto;
+}
+
+
+.slider-card p {
+  opacity: 85%;
+  width: 80%;
+  line-height: 1.5rem;
+  margin: auto;
+}

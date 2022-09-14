@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0000004d;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  padding-right: 1.5rem;
+}
+
+.header-logo {
+  width: 80%;
+}
+
+.header-icons {
+  font-size: 1.4rem;
+}
