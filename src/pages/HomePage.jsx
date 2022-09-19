@@ -8,7 +8,7 @@ import MoreProjects from "../components/MoreProjects";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
 
-import classes from "./HomePage.module.css";
+// import classes from "./HomePage.module.css";
 
 const HomePage = () => {
   

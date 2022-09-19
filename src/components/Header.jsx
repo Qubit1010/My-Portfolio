@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import Logo from "../assets/Logo.svg";

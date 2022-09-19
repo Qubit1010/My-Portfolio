@@ -2,8 +2,6 @@ import React, { Fragment, useEffect } from "react";
 import Aos from "aos";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import MyPic from "../assets/MyPic.jpg";
-import MyPic2 from "../assets/MyPic2.png";
 import MyPic3 from "../assets/MyPic3.png";
 
 import { FaPhoneAlt, FaMailBulk, FaAddressBook, FaCheck } from "react-icons/fa";
