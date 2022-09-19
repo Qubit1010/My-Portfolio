@@ -45,7 +45,7 @@ const ContactPage = () => {
   const messageRef = useRef("");
 
   async function formDataHandler(form) {
-    const response = await fetch(
+     await fetch(
       "https://my-portfolio-site-0007-default-rtdb.firebaseio.com/form-data.json",
       {
         method: "POST",
@@ -53,11 +53,9 @@ const ContactPage = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        // mode: "no-cors",
       }
     );
-    const data = await response.json();
-    console.log(data);
+    
   }
 
   function submitHandler(event) {
@@ -117,7 +115,7 @@ const ContactPage = () => {
           <div className={classes["contact-left-block-social-media-links"]}>
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/" target="blank">
                   <FaFacebookSquare className={classes["header-icons"]} />
                 </a>
               </li>

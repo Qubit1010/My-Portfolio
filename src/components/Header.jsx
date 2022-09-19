@@ -28,7 +28,7 @@ const Header = () => {
         <nav className={classes["header-social-media-links"]}>
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/" target="blank">
                 <FaFacebookSquare className={classes["header-icons"]} />
               </a>
             </li>

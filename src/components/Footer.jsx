@@ -3,7 +3,6 @@ import {
   FaFacebookSquare,
   FaLinkedin,
   FaGithub,
-  FaArrowRight,
 } from "react-icons/fa";
 
 import Logo from "../assets/Logo.svg";
@@ -33,8 +32,8 @@ const Footer = () => {
             <nav className={classes["footer-social-media-links"]}>
               <ul>
                 <li>
-                  <a href="#">
-                    <FaFacebookSquare className={classes["header-icons"]} />
+                  <a href="https://www.facebook.com/">
+                    <FaFacebookSquare className={classes["header-icons"]} target="blank" />
                   </a>
                 </li>
                 <li>
