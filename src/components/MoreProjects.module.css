@@ -20,6 +20,11 @@
 .slider-card img{
   width: 92%;
   margin: auto;
+  transition: all 1s;
+}
+
+.slider-card img:hover{
+  scale: 1.1;
 }
 
 
@@ -28,4 +33,13 @@
   width: 80%;
   line-height: 1.5rem;
   margin: auto;
+}
+
+.slider-card a {
+  transition: all .6s;
+}
+
+.slider-card a:hover {
+  text-decoration: underline;
+  color: #158bd9;
 }

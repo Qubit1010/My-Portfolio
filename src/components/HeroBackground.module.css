@@ -27,7 +27,8 @@
 
 .hero-bg-left-block h3 {
   font-size: 3rem;
-  opacity: 40%;
+  color: #158bd9;
+  opacity: 70%;
 }
 
 .hero-bg-left-block p {
@@ -37,17 +38,24 @@
   text-align: justify;
   line-height: 2rem;
   margin-top: 3rem;
+  transition: all 1s;
 }
 
 .hero-bg-left-block h1 {
   font-size: 4rem;
   margin: 0.4rem;
+  transition: all 1s;
 }
 
 .left-block-icon {
   margin-bottom: 20px;
   margin-left: -15px;
   color: #158bd9;
+  transition: all .6s;
+}
+
+.left-block-icon:hover {
+  color: whitesmoke;
 }
 
 .right-block-top-content {
@@ -82,4 +90,18 @@
     color: rgb(255, 255, 255);
     transform: translateX(-25%) translateY(30%) rotate(50deg);
   }
+}
+
+@media (max-width: 1250px) {
+  .hero-bg-left-block h1 {
+    font-size: 3rem;
+    margin: 0.4rem;
+  }
+
+  .hero-bg-left-block p {
+    opacity: 90%;
+    width: 70%;
+    font-size: 1rem;
+  }
+
 }

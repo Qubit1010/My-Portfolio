@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #0000004d;
+  background: #121b2a;
 }
 
 nav ul {
@@ -15,8 +15,22 @@ nav li {
   padding-right: 1.5rem;
 }
 
+.header-social-media-links a {
+  transition: all 1s;
+}
+
+
+.header-social-media-links a:hover {
+  color: #158bd9;
+}
+
 .header-logo {
-  width: 80%;
+  width: 60%;
+  transition: all .6s;
+}
+
+.header-logo:hover{
+  scale: 1.1;
 }
 
 .header-icons {

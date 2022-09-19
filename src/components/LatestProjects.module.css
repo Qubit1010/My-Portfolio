@@ -13,11 +13,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 400px);
-  padding: 1rem 9rem;
-}
-
-.project-img-card:hover {
-  opacity: 70%;
+  max-width: 80%;
+  margin: auto;
+  transition: all 1s;
 }
 
 .project-img-card img {
@@ -26,22 +24,32 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all 1s;
 }
 
-.project-info-card, .project-info-card2 {
+.project-img-card img:hover {
+  opacity: 65%;
+}
+
+.project-info-card,
+.project-info-card2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #158bd9;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.project-info-card h2, .project-info-card2 h2 {
+.project-info-card h2,
+.project-info-card2 h2 {
   color: #020d1f;
   font-size: 2rem;
 }
 
-.project-info-card p, .project-info-card2 p {
+.project-info-card p,
+.project-info-card2 p {
   line-height: 1.5rem;
   margin-top: 0;
   margin-bottom: 4rem;
@@ -50,15 +58,22 @@
   margin-right: auto;
 }
 
-.project-info-card button, .project-info-card2 button {
+.project-info-card button,
+.project-info-card2 button {
   padding: 0.8rem 1.5rem;
   background-color: transparent;
   border: 1.5px solid #020d1f;
   border-radius: 20px;
+  transition: all 1s;
 }
 
 .project-info-card2 {
-  background-color: #2b303966;; 
+  background-color: #2b303966;
+}
+
+.project-info-card button:hover {
+  background-color: #020d1f;
+  color: #158bd9;
 }
 
 .project-info-card2 button {
@@ -66,6 +81,28 @@
   color: #158bd9;
 }
 
-.project-info-card2 h2{
+.project-info-card2 button:hover {
+  background-color: #158bd9;
+  color: #020d1f;
+}
+
+.project-info-card2 h2 {
   color: #158bd9;
+}
+
+@media (max-width: 1250px) {
+  .projects-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    max-width: 90%;
+    margin: auto;
+    padding: 0rem 0rem;
+  }
+
+  .project-info-card,
+  .project-info-card2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }

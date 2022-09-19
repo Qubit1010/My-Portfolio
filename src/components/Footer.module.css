@@ -1,0 +1,131 @@
+.footer-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 500px;
+  /* max-width: 80%; */
+  /* margin: auto; */
+  /* grid-gap: 2rem; */
+  margin-top: 7rem;
+}
+
+.footer-logo {
+  width: 120px;
+  margin: auto;
+  transition: all 0.6s;
+}
+
+.footer-logo:hover {
+  scale: 1.1;
+}
+
+.footer-left-block {
+  height: 100%;
+  background-color: #2b303966;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 2rem;
+}
+
+.footer-left-block h2 {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footer-left-block-info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.footer-left-block-info h3,
+h4 {
+  color: #158bd9;
+  font-size: 1.1rem;
+}
+
+.footer-left-block-info h3 {
+  font-size: 1.2rem;
+  margin-right: 6rem;
+  text-transform: uppercase;
+}
+
+.footer-right-block {
+  height: 100%;
+  background-color: #158bd9;
+  padding-left: 4rem;
+}
+
+.footer-right-block-top {
+  border-bottom: 1px solid #121b2a;
+  padding-bottom: 3rem;
+}
+
+.footer-right-block-top h1 {
+  font-size: 3.5rem;
+  width: 60%;
+}
+
+.footer-right-block-top button {
+  padding: 1.2rem 2.2rem;
+  color: #ffffff;
+  background-color: #121b2a;
+  font-size: 1.1rem;
+  border: none;
+  transition: all 0.6s;
+}
+
+.footer-right-block-top button:hover {
+  padding: 1.2rem 2.2rem;
+  color: #121b2a;
+  background-color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.footer-social-media-links ul {
+  font-size: 3rem;
+  color: #121b2a;
+  padding-left: 0;
+  /* margin-top: 4.2rem; */
+  margin-bottom: 0;
+}
+
+.footer-right-block-bottom a {
+  color: #121b2a;
+  transition: all 0.8s;
+}
+
+.footer-right-block-bottom a:hover {
+  color: #ffffff;
+}
+
+.footer-right-block-top button:after {
+  content: " \003E";
+  margin-left: 0.7rem;
+  color: #158bd9;
+}
+
+@media (max-width: 1250px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+  }
+
+  .footer-right-block-top h1 {
+    font-size: 2.5rem;
+    width: 70%;
+  }
+
+  .footer-right-block-top button {
+    margin-top: 3rem;
+  }
+
+  .footer-left-block-info h3,
+  h4 {
+    font-size: .9rem;
+  }
+}

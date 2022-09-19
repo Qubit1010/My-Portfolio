@@ -10,8 +10,10 @@ html {
 }
 
 body {
+  scroll-behavior: smooth;
   margin: 0;
   background-color: #020d1f;
+  /* height: 100vh; */
   color: white;
 }
 
@@ -25,3 +27,11 @@ body {
   color: rgb(255, 255, 255);
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li, a, button {
+  cursor: pointer;
+}

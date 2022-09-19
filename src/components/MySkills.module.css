@@ -16,6 +16,7 @@
   max-width: 80%;
   margin: auto;
   grid-gap: 2rem;
+  transition: all 1s;
 }
 
 .myskills-card-content {
@@ -27,8 +28,28 @@
   justify-content: center;
   align-items: center;
   border-radius: 10%;
+  transition: all 0.7s;
 }
 
-.myskills-icon{
+.myskills-card-content:hover {
+  opacity: 75%;
+}
+
+.myskills-icon {
   font-size: 4rem;
+  transition: all 1s;
+}
+
+@media (max-width: 1250px) {
+  .myskills-card-content h2 {
+    font-size: 1rem;
+  }
+
+  .myskills-icon {
+    font-size: 3rem;
+  }
+
+  .myskills-cards-container {
+    grid-template-rows: repeat(2, 150px);
+  }
 }

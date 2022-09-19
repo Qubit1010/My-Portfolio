@@ -8,6 +8,7 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 9rem;
   grid-gap: 2rem;
+  transition: all 1s;
 }
 
 .service-top-content {
@@ -32,10 +33,6 @@
   padding-bottom: 4em;
 }
 
-.service-card:hover, .service-card-mid:hover {
-  opacity: 80%;
-}
-
 .service-card-mid {
   background-color: #2b303966;
   padding-top: 4rem;
@@ -43,6 +40,8 @@
   border-radius: 10px;
   padding-bottom: 4em;
 }
+
+
 
 .service-card p, .service-card-mid p {
   width: 85%;
@@ -53,4 +52,29 @@
 
 .service-card-icon {
   font-size: 4rem;
+}
+
+
+
+
+@media (max-width: 1250px) {
+  .service-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0rem 0rem;
+    max-width: 90%;
+    margin: auto;
+    grid-gap: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .service-cards-container {
+    display: grid;
+    grid-template-columns:  1fr;
+    padding: 0rem 0rem;
+    max-width: 90%;
+    margin: auto;
+    grid-gap: 2rem;
+  }
 }

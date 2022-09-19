@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-// import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom";
 import { FaFacebookSquare, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import Logo from "../assets/Logo.svg";
@@ -11,24 +11,39 @@ const Header = () => {
       <header>
         <nav className={classes["header-main-links"]}>
           <ul>
-            <li> Works</li>
-            <li>Contact</li>
-            <li>About Me</li>
+            <Link to='/works'>
+              <li> Works</li>
+            </Link>
+            <Link to='/contact'>
+              <li>Contact</li>
+            </Link>
+            <Link to='/about'>
+              <li>About Me</li>
+            </Link>
           </ul>
         </nav>
         <div className={classes["header-logo-container"]}>
-          <img className={classes["header-logo"]} src={Logo} alt="" />
+          <Link to='/homepage'> <img className={classes["header-logo"]} src={Logo} alt="" /> </Link>
         </div>
         <nav className={classes["header-social-media-links"]}>
           <ul>
             <li>
-              <FaFacebookSquare className={classes['header-icons']}/>
+              <a href="#">
+                <FaFacebookSquare className={classes["header-icons"]} />
+              </a>
             </li>
             <li>
-              <FaLinkedin className={classes['header-icons']}/>
+              <a
+                href="https://www.linkedin.com/in/qubit-state-253b0b201/"
+                target="blank"
+              >
+                <FaLinkedin className={classes["header-icons"]} />
+              </a>
             </li>
             <li>
-              <FaGithub className={classes['header-icons']}/>
+              <a href="https://github.com/Qubit1010" target="blank">
+                <FaGithub className={classes["header-icons"]} />
+              </a>
             </li>
           </ul>
         </nav>
