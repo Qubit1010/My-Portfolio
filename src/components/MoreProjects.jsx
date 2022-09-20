@@ -32,7 +32,7 @@ const MoreProjects = () => {
   };
   return (
     <Fragment>
-      <h1 className={classes["slider-h1"]} data-aos="fade-up">
+      <h1 className={classes["slider-h1"]} data-aos="fade-up" data-aos-duration="12 00">
         More Projects
       </h1>
       <Slider {...settings} className={classes["slider-contanainer"]}>
@@ -47,7 +47,7 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400">
           <img src={ProjectPicture4} alt="" />
           <a href="https://expense-calculator1212.netlify.app/" target='blank'>
             <h3>Expense-Calculator</h3>
@@ -58,7 +58,7 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400" >
           <img src={ProjectPicture10} alt="" />
           <a href="https://advance-redux-f5f48.web.app/" target='blank'>
             <h3>Book-Store</h3>
@@ -69,7 +69,7 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400" >
           <img src={ProjectPicture5} alt="" />
           <a href="https://ecommerce-site-1.herokuapp.com/" target='blank'>
             <h3>Ecommerce-website</h3>
@@ -81,7 +81,7 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400" >
           <img src={ProjectPicture3} alt="" />
           <a href="https://qubit1010.github.io/Bootstrape-Car-Store/" target='blank'>
             <h3>Car-Store</h3>
@@ -92,7 +92,7 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400" >
           <img src={ProjectPicture12} alt="" />
           <a href="https://qubit-website-25517.firebaseapp.com/" target='blank'>
             <h3>My-Old-Portfolio-Website</h3>
@@ -100,7 +100,7 @@ const MoreProjects = () => {
           <p>You can download the template from my Github account</p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400" >
           <img src={ProjectPicture11} alt="" />
           <a href="https://react-http-64503.web.app/" target='blank'>
             <h3>Movie Database</h3>
@@ -112,7 +112,7 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400" >
           <img src={ProjectPicture2} alt="" />
           <a href="https://qubit1010.github.io/Tech-Store/" target='blank'>
             <h3>Tech-Shop</h3>
@@ -123,7 +123,7 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400" >
           <img src={ProjectPicture13} alt="" />
           <a href="https://testsite-e91f4a.webflow.io/" target='blank'>
             <h3>Ecommerce-Webflow-Website</h3>
@@ -131,7 +131,7 @@ const MoreProjects = () => {
           <p>This is a landing page of a website, created in webflow.</p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" data-aos-duration="1400" >
           <img src={ProjectPicture14} alt="" />
           <a href="https://test-10101.webflow.io/" target='blank'>
             <h3>Webflow-Website</h3>
@@ -139,7 +139,7 @@ const MoreProjects = () => {
           <p>This is a landing page of a website, created in webflow.</p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" >
           <img src={ProjectPicture7} alt="" />
           <a href="https://qubit1010.github.io/Movie-Search-App/" target='blank'>
             <h3>Movie-Viewer</h3>
@@ -150,7 +150,7 @@ const MoreProjects = () => {
           </p>
         </div>
 
-        <div className={classes["slider-card"]} data-aos="zoom-in">
+        <div className={classes["slider-card"]} data-aos="zoom-in" >
           <img src={ProjectPicture6} alt="" />
           <a href="https://qubit1010.github.io/Notes-App/" target='blank'>
             <h3>Note-App</h3>

@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaFacebookSquare, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import Logo from "../assets/Logo.svg";
 import classes from "./Footer.module.css";
@@ -21,23 +18,31 @@ const Footer = () => {
           </div>
           <h2>©2022</h2>
         </div>
-        
+
         {/* Right Block */}
         <div className={classes["footer-right-block"]}>
           <div className={classes["footer-right-block-top"]}>
             <h1>Ready to work with me?</h1>
-            <button>Contact Me</button>
+            <Link to='/contact'>
+              <button>Contact Me</button>
+            </Link>
           </div>
           <div className={classes["footer-right-block-bottom"]}>
             <nav className={classes["footer-social-media-links"]}>
               <ul>
                 <li>
                   <a href="https://www.facebook.com/">
-                    <FaFacebookSquare className={classes["header-icons"]} target="blank" />
+                    <FaFacebookSquare
+                      className={classes["header-icons"]}
+                      target="blank"
+                    />
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/qubit-state-253b0b201/" target="blank">
+                  <a
+                    href="https://www.linkedin.com/in/qubit-state-253b0b201/"
+                    target="blank"
+                  >
                     <FaLinkedin className={classes["header-icons"]} />
                   </a>
                 </li>

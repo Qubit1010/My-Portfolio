@@ -8,8 +8,7 @@ import classes from "./Service.module.css";
 
 const Service = () => {
   useEffect(() => {
-    Aos.init({
-    });
+    Aos.init({});
   });
 
   return (
@@ -19,6 +18,7 @@ const Service = () => {
           className={classes["service-top-content"]}
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1200"
         >
           <h1>My Services</h1>
           <p>
@@ -27,7 +27,12 @@ const Service = () => {
         </div>
 
         <div className={classes["service-cards-container"]}>
-          <div className={classes["service-card"]} data-aos="fade-right">
+          <div
+            className={classes["service-card"]}
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-offset="200"
+          >
             <BsPeopleFill className={classes["service-card-icon"]} />
             <h1>UI/UX Design</h1>
             <p>I can provide you with the best UI/UX design experience.</p>
@@ -37,6 +42,8 @@ const Service = () => {
             className={classes["service-card-mid"]}
             data-aos="fade-up"
             data-aos-delay="50"
+            data-aos-duration="1400"
+            data-aos-offset="200"
           >
             <AiOutlineAntDesign className={classes["service-card-icon"]} />
             <h1>Indentity Design</h1>
@@ -46,7 +53,12 @@ const Service = () => {
             </p>
           </div>
 
-          <div className={classes["service-card"]} data-aos="fade-left">
+          <div
+            className={classes["service-card"]}
+            data-aos="fade-left"
+            data-aos-duration="1200"
+            data-aos-offset="200"
+          >
             <FaCode className={classes["service-card-icon"]} />
             <h1>Development</h1>
             <p>

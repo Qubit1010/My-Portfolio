@@ -12,7 +12,7 @@ const HeroBackground = () => {
   });
   return (
     <section>
-      <div className={classes["hero-bg-container"]} data-aos="fade-up">
+      <div className={classes["hero-bg-container"]} data-aos="fade-up" data-aos-duration="1400">
         {/* Left Block */}
         <div className={classes["hero-bg-left-block"]}>
           <h3>Hello!</h3>

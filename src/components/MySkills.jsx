@@ -23,7 +23,7 @@ const MySkills = () => {
   return (
     <section className={classes["myskills-container"]}>
       <h1  data-aos="fade-up" >My Tech Skills</h1>
-      <div className={classes["myskills-cards-container"]} data-aos="flip-up" data-aos-duration="1400" data-aos-delay="50">
+      <div className={classes["myskills-cards-container"]} data-aos="flip-up" data-aos-duration="1000" >
         <div className={classes["myskills-card-content"]}>
           <FaHtml5 className={classes["myskills-icon"]} />
           <h2>HTML</h2>

@@ -18,34 +18,18 @@ import classes from "./ContactPage.module.css";
 const ContactPage = () => {
   useEffect(() => {
     Aos.init({
-      // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: "aos-init", // class applied after initialization
-      animatedClassName: "aos-animate", // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 200, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 1000, // values from 0 to 3000, with step 50ms
-      easing: "ease", // default easing for AOS animations
       once: true, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
       anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
     });
   });
-  
+
   const [isSuccess, setIsSuccess] = useState(false);
   const nameRef = useRef("");
   const emailRef = useRef("");
   const messageRef = useRef("");
 
   async function formDataHandler(form) {
-     await fetch(
+    await fetch(
       "https://my-portfolio-site-0007-default-rtdb.firebaseio.com/form-data.json",
       {
         method: "POST",
@@ -55,7 +39,6 @@ const ContactPage = () => {
         },
       }
     );
-    
   }
 
   function submitHandler(event) {
@@ -70,23 +53,32 @@ const ContactPage = () => {
     };
 
     formDataHandler(formData);
+
+    // const isEmpty = Object.keys(formData).length === 0;
+    // if(isEmpty){
     setIsSuccess(true);
+
+    setTimeout(() => {
+      setIsSuccess(false);
+    }, "4000");
+
+    // }
     console.log(formData);
-    nameRef.current.value = '';
-    emailRef.current.value = '';
-    messageRef.current.value = '';
+    nameRef.current.value = "";
+    emailRef.current.value = "";
+    messageRef.current.value = "";
   }
-  
-  
 
   return (
     <Fragment>
       <Header />
-      <h1 className={classes["contact-page-h1"]} data-aos="fade-up">Contact Me</h1>
-      <h3 className={classes["contact-page-h3"]} data-aos="fade-up">
+      <h1 className={classes["contact-page-h1"]} data-aos="fade-up" data-aos-duration="1400">
+        Contact Me
+      </h1>
+      <h3 className={classes["contact-page-h3"]} data-aos="fade-up" data-aos-duration="1400">
         Any questions or remarks? Just write me a message!
       </h3>
-      <div className={classes["contact-page-container"]} data-aos="fade-up">
+      <div className={classes["contact-page-container"]} data-aos="fade-up" data-aos-duration="1400"> 
         <div className={classes["contact-left-block"]}>
           <h1> Contact Information </h1>
           <h3>
@@ -142,13 +134,13 @@ const ContactPage = () => {
             <div className={classes["contact-form-icon"]}>
               <BsFillPersonFill />
             </div>
-            <input type="text" id="name" ref={nameRef} />
+            <input type="text" id="name" ref={nameRef} required />
 
             <label htmlFor="email">Email</label>
             <div className={classes["contact-form-icon"]}>
               <MdEmail />
             </div>
-            <input type="email" id="email" ref={emailRef} />
+            <input type="email" id="email" ref={emailRef} required />
 
             <label htmlFor="message">Message</label>
             <div className={classes["contact-form-icon"]}>
@@ -160,6 +152,7 @@ const ContactPage = () => {
               cols="10"
               rows="10"
               ref={messageRef}
+              required
             ></textarea>
             <button>Submit</button>
             {isSuccess && <p>Form Submitted Successfully</p>}

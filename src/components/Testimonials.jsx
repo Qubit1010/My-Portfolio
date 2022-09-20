@@ -19,6 +19,7 @@ const Testimonials = () => {
       <div
         className={classes["testimonials-container"]}
         data-aos="fade-up"
+        data-aos-duration="1400"
         data-aos-anchor-placement="bottom-bottom"
       >
         <h1>Testimonials</h1>
@@ -42,10 +43,12 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
+      
       {/* 2nd Testimonial */}
       <div
         className={classes["testimonials-container"]}
         data-aos="fade-up"
+        data-aos-duration="1400"
         data-aos-anchor-placement="bottom-bottom"
       >
         <div className={classes["testimonial-content-container"]}>
@@ -71,10 +74,12 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
+      
       {/* 3rd Testimonial */}
       <div
         className={classes["testimonials-container"]}
         data-aos="fade-up"
+        data-aos-duration="1400"
         data-aos-anchor-placement="bottom-bottom"
       >
         <div className={classes["testimonial-content-container"]}>
